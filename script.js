@@ -12,8 +12,6 @@ function createGrid(gridSize) {
     for (let i = 0; i < gridSize * gridSize; i++) {
         const gridItem = document.createElement('div');
         gridItem.classList.add('grid-item');
-        gridItem.style.width = `calc(100% / ${gridSize})`; 
-        gridItem.style.height = `calc(100% / ${gridSize})`;
         gridItem.addEventListener('mouseenter', function() {
             this.classList.add('black-grid-item');
         });
